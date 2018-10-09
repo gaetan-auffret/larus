@@ -1,0 +1,24 @@
+{
+  "name": "larus",
+  "version": "0.1.0",
+  "description": "Larus map data loader",
+  "keywords": [
+    "map",
+    "performance",
+    "larus",
+    "payload"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gaetan-auffret/larus.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaetan-auffret/larus/issues"
+  },
+  "devDependencies": {
+    "eslint": "5.6.1",
+    "jsdoc": "3.5.5",
+    "webpack": "4.20.2"
+  }
+}
