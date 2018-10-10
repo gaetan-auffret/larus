@@ -2,6 +2,12 @@
   "name": "larus",
   "version": "0.1.0",
   "description": "Larus map data loader",
+  "contributors": [
+    {
+      "name": "Gaëtan Auffret",
+      "url": "https://github.com/gaetan-auffret"
+    }
+  ],
   "keywords": [
     "map",
     "performance",
