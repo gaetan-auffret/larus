@@ -23,14 +23,15 @@
 		"url": "https://github.com/gaetan-auffret/larus/issues"
 	},
 	"devDependencies": {
+		"coveralls": "^3.0.2",
 		"jest": "^23.6.0",
 		"webpack": "^4.20.2",
 		"webpack-cli": "^3.1.2"
 	},
 	"scripts": {
-		"test": "jest",
+		"test": "jest --coverage --coverageReporters=text-lcov | coveralls",
 		"test:watch": "jest --watchAll",
-		"build" : "webpack"
+		"build": "webpack"
 	},
 	"dependencies": {
 		"lodash": "^4.17.11"
