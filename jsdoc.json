@@ -1,0 +1,27 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": [
+      "jsdoc"
+    ]
+  },
+  "source": {
+    "include": "./build/js/src",
+    "includePattern": ".js",
+    "excludePattern": "(node_modules/|docs)"
+  },
+  "sourceType": "module",
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "opts": {
+    "destination": "build/docs/",
+    "recurse": true,
+    "verbose": true,
+    "private": false
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  }
+}
