@@ -1,0 +1,37 @@
+{
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module"
+	},
+	"env": {
+		"es6": true,
+		"jest/globals": true
+	},
+	"plugins": [
+		"jest"
+	],
+	"extends": [
+		"eslint:recommended",
+		"plugin:jest/recommended"
+	],
+	"rules": {
+		"valid-jsdoc": "error",
+		"for-direction": "error",
+		"no-await-in-loop": "error",
+		"no-extra-parens": "error",
+		"no-template-curly-in-string": "error",
+		"complexity": [
+			"error",
+			{
+				"max": 10
+			}
+		],
+		"no-eval": "error",
+		"no-throw-literal": "error",
+		"no-duplicate-imports": "error",
+		"jest/no-disabled-tests": "warn",
+		"jest/no-focused-tests": "error",
+		"jest/prefer-to-have-length": "warn",
+		"jest/valid-expect": "error"
+	}
+}

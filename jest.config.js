@@ -11,9 +11,6 @@ module.exports = {
 	// Respect "browser" field in package.json when resolving modules
 	// browser: false,
 
-	// The directory where Jest should store its cached dependency information
-	// cacheDirectory: "C:\\Users\\gaetan\\AppData\\Local\\Temp\\jest",
-
 	// Automatically clear mock calls and instances between every test
 	clearMocks : true,
 
@@ -23,10 +20,10 @@ module.exports = {
 
 	// An array of glob patterns indicating a set of files for which coverage
 	// information should be collected
-	collectCoverageFrom : [ "src/larus/**/*.{js}" ],
+	collectCoverageFrom : [ "build/js/src/larus/**/*.{js}" ],
 
 	// The directory where Jest should output its coverage files
-	coverageDirectory : "coverage",
+	coverageDirectory : "build/coverage",
 
 	// An array of regexp pattern strings used to skip coverage collection
 	// coveragePathIgnorePatterns: [
@@ -100,7 +97,7 @@ module.exports = {
 	// notifyMode: "always",
 
 	// A preset that is used as a base for Jest's configuration
-	// preset: null,
+	preset: 'ts-jest/presets/js-with-ts',
 
 	// Run tests from one or more projects
 	// projects: null,

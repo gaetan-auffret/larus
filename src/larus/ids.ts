@@ -10,6 +10,8 @@
  */
 let uidCounter_ = 0;
 
+let larus_uid = Symbol.for("larus_uid");
+
 /**
  * Gets a unique ID for an object. This mutates the object so that further calls
  * with the same object as a parameter returns the same value. Unique IDs are
@@ -20,15 +22,13 @@ let uidCounter_ = 0;
  * @return {number} The unique ID for the object.
  * @api
  */
-function getUid(obj) {
-  return obj.ol_uid || (obj.ol_uid = ++uidCounter_);
-};
+export function getUid(obj: object) {
+    return obj[larus_uid] || (obj[larus_uid] = ++uidCounter_);
+}
 
 /**
  * Larus version.
  * 
  * @type {string}
  */
-const VERSION = 'latest';
-
-module.exports = { VERSION, getUid };
+export const VERSION = 'latest';
